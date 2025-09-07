@@ -242,9 +242,9 @@ function Agency() {
         >
           <div className="  h-full w-[35rem] rounded-4xl  ">
             <img
-              className="  z-[10] h-full relative w-full object-cover rounded-4xl "
+              className="  z-[10] h-full relative bg-red-500 w-full object-cover rounded-4xl "
               src={olive}
-              alt=""
+              alt="error in loading"
             />
             <div className="alex-container z-0   absolute top-5  left-0 w-full overflow-hidden text-[#D3FD50]  ">
               <div className="flex whitespace-nowrap  justify-between  font-[font2] alex-glow items-center ">

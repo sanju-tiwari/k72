@@ -41,7 +41,7 @@ function Blog() {
             <div className=" flex flex-col group " >
               <div className=" xl:mt-0 h-[20rem] md:w-[25rem] lg:w-[30rem] xl:h-[23rem] xl:w-[40rem] bg-red-500 hover:rounded-4xl duration-150 ease-in-out  ">
                 <img
-                  src="public\image\img6.gif"
+                  src="/image/img6.gif"
                   className="h-full w-full object-cover hover:rounded-4xl duration-150 ease-in-out "
                   alt=""
                 />
