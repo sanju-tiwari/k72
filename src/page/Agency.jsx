@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import olive from "../../public/image/Olivier_480x640-480x640.jpg"
 
 function Agency() {
   const navigate = useNavigate();
@@ -242,7 +243,7 @@ function Agency() {
           <div className="  h-full w-[35rem] rounded-4xl  ">
             <img
               className="  z-[10] h-full relative w-full object-cover rounded-4xl "
-              src="/image/Olivier_480x640-480x640.jpg "
+              src={olive}
               alt=""
             />
             <div className="alex-container z-0   absolute top-5  left-0 w-full overflow-hidden text-[#D3FD50]  ">
