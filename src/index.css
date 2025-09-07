@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: font1;
+  src: url('public\font\Lausanne-300.woff2');
+}
+@font-face {
+  font-family: font2;
+  src: url('public\font\Lausanne-500.woff2');
+}
+
+::selection {
+  background: #D3FD50; 
+  color: black;     
+}
+
+::-moz-selection {
+  background: red;
+  color: white;
+}
+
+
+@keyframes move-along-path {
+  from {
+    stroke-dashoffset: 2150;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.scribble-animation {
+ 
+  stroke-dasharray: 150 2000;
+
+  stroke-dashoffset: 2150;
+  
+
+  animation: move-along-path 5s linear infinite;
+}
+
+
+.moveX{
+    animation-name: moveAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.moveLink{
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.link:hover .moveLink{
+    opacity: 1;
+}
+
+@keyframes moveAnimation {
+    from{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.moveLink2 {
+  /* Apply the animation here */
+  animation: moveAnimation 20s linear infinite;
+  -webkit-animation: moveAnimation 20s linear infinite;
+}
+
+/* Optional: Pause the animation on hover */
+.moveLink2:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Keyframes for the horizontal scroll */
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  to {
+    /* Move the container left by the width of one of its children */
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+
+  @keyframes scroll-left {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
+        }
+
+        @keyframes scroll-glow {
+          0% { 
+            transform: translateX(100%);
+          }
+          50% { 
+          }
+          100% { 
+            transform: translateX(-100%);
+          }
+        }
+
+        .alex-scroll {
+          animation: scroll-left 8s linear infinite;
+        }
+
+        .alex-glow {
+          animation: scroll-glow 9s linear infinite;
+        }
+
+          @keyframes scroll-left2 {
+          0% { transform: translateX(-100%); -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); }
+          100% { transform: translateX(100%); -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); }
+        }
+             @keyframes scroll-glow2 {
+          0% {
+            transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+            -moz-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            -o-transform: translateX(-100%);
+}
+          50% { 
+          }
+          100% {
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
+}
+        }
+
+        .alex-scroll2 {
+          animation: scroll-left2 8s linear infinite;
+          -webkit-animation: scroll-left2 8s linear infinite;
+}
+
+        .alex-glow2 {
+          animation: scroll-glow2 9s linear infinite;
+          -webkit-animation: scroll-glow2 9s linear infinite;
+}
