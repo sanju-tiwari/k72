@@ -66,10 +66,10 @@ function Project() {
             {project.map((items , i)=>{
                return (
                 <div> 
-                <div className=' hidden hero w-full lg:h-[40rem] mb-4 xl:flex lg:flex-row flex-col lg:gap-4 gap-2 ' >
+                <div className=' hidden hero w-full h-[40rem] mb-4 xl:flex lg:flex-row flex-col lg:gap-4 gap-2 ' >
                      <ProjectCard image={items.image1} image2={items.image2} />
                 </div>
-                    <div className=' xl:hidden   hero w-full lg:h-[40rem] mb-4 flex lg:flex-row flex-col lg:gap-4 gap-2 ' >
+                    <div className=' xl:hidden   hero w-full h-[40rem] mb-4 flex lg:flex-row flex-col lg:gap-4 gap-2 ' >
                      <ProjectCard image={items.image1} image2={items.image2} />
                 </div>
                 </div>
